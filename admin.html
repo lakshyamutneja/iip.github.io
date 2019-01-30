@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Panel</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body class="grey lighten-3">
+        <nav style="background: #3949ab">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center  hide-on-med-and-down">Admin Panel</a>
+                <ul id="nav-mobile" class="right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="show('#map')">Map</a></li>
+                <li><a href="#" onclick="show('#add')">Addicts</a></li>
+                </ul>   
+            </div>
+        </nav>
+        <div>
+                <div id="map">
+                      <div class="card-content" style="height:90vh;" id="gm1"></div>
+                </div>
+                <div class="row" style="margin-top:30px; display: none" id="add">
+                    <div class="col s12 l6 offset-l3">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card darken-1">
+                                    <div class="card-content">
+                                        <span class="card-title"><b>Aarav</b></span>
+                                        <p>
+                                            <b>Location:</b> <a target="_blank" href="https://www.google.com/maps/@12.9753479,79.1517423,15z">Open in Google Maps</a><br>
+                                            <b>Email:</b> aarnav@gmail.com<br>
+                                            <b>Phno:</b> 9996758378<br>
+                                            <b>Drugs Used:</b> Marijuana,Cocaine,Heroin,Benzodiazepines,Sedatives <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <div class="card darken-1">
+                                    <div class="card-content">
+                                        <span class="card-title"><b>Arjun</b></span>
+                                        <p>
+                                            <b>Location:</b> <a target="_blank" href="https://www.google.com/maps/@23.6427,86.3928,15z">Open in Google Maps</a><br>
+                                            <b>Email:</b> arjun@gmail.com<br>
+                                            <b>Phno:</b> 9766453421<br>
+                                            <b>Drugs Used:</b> Marijuana,Cocaine,Heroin,Benzodiazepines,Sedatives <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <div class="card darken-1">
+                                    <div class="card-content">
+                                        <span class="card-title"><b>Reyansh</b></span>
+                                        <p>
+                                            <b>Location:</b> <a target="_blank" href="https://www.google.com/maps/@22.3149,69.7281,15z">Open in Google Maps</a><br>
+                                            <b>Email:</b> reyansh@gmail.com<br>
+                                            <b>Phno:</b> 8993445673<br>
+                                            <b>Drugs Used:</b> Marijuana,Cocaine,Heroin,Benzodiazepines,Sedatives <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/MapPlaced.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEUsLnKqhV-3DzONveudaxSylYewVReYU&libraries=places&callback=initAutocomplete"
+        async defer></script>
+  </body>
+  <script>
+  function show(id){
+      $('#map').fadeOut()
+      $('#add').fadeOut()
+      $(id).fadeIn()
+  } </script>
+</html>
